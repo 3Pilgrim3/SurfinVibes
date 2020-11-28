@@ -1,0 +1,828 @@
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(217deg, rgba(255, 145, 0, 0.8), rgba(0, 255, 157, 0) 80%),
+    linear-gradient(127deg, rgba(0, 238, 255, 0.8), rgba(12, 218, 139, 0) 80%),
+    linear-gradient(336deg, rgba(41, 161, 241, 0.767), rgba(0, 204, 255, 0) 80%);
+    background-size: cover;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: linear 1s;
+}
+
+
+
+
+/*COLORPICKER COLORPICKER COLORPICKER COLORPICKER COLORPICKER*/
+  
+.themebutton{
+    position:absolute;
+    left:1vh;
+    top:30vh;
+    background-color: rgba(100, 100, 100, 0.5);
+    border:transparent;
+    border-radius: 10vh;
+    cursor:pointer;
+}
+
+body.switchcolor {
+    background: linear-gradient(217deg, rgba(255, 250, 0, 0.7), rgba(0, 291, 111, 1) 80%),
+    linear-gradient(127deg, rgba(287, -120, 0, 1.8), rgba(12, 218, 139, -6) 80%),
+    linear-gradient(336deg, rgba(233, 0, 58, 0.767), rgba(0, 204, 255, 0) 80%)
+}
+
+/*COLORPICKER COLORPICKER COLORPICKER COLORPICKER COLORPICKER*/
+
+
+
+
+
+
+
+/*--------------------------HEADER---------------------------*/
+header{
+    display:flex;
+    justify-content: space-around;
+    width:80%;
+    background-color: transparent;
+    margin-bottom: 1vh;
+}
+.logo{
+    width:20%;
+    height:8vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header img{
+    margin: 1vh;
+}
+.navi{
+    display: flex;
+    justify-content: space-evenly;
+    width:60%;
+    margin: auto;
+}
+.navi a{
+    text-decoration: none;
+    margin:1.2em;
+    color: rgb(0, 0, 0);
+    font-size: large;
+}
+
+
+/*BURGER BURGER BURGER BURGER BURGER BURGER BURGER BURGER*/
+
+.burger{
+    display: none;
+}
+.naviburger{
+    display: none;
+}
+
+/*--------------------------WRAPPER---------------------------*/
+#wrapper{
+    width:80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*--------------------------MAIN---------------------------*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width:100%;
+}
+h1{
+    text-align: center;
+    font-size: 3em;
+}
+input, .send{
+    margin: 1vh 0;
+}
+.under{
+    width:5%;
+    border-top: solid 0.2vh rgb(6, 233, 184);
+}
+/*--------------------------SECTION-TITRE---------------------------*/
+.first{
+    height: 600px;
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/000/460/680/large/maria-carriedo-mariacarriedo-vray.jpg?1443930552") ;
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+}
+.intro, .first h1, .read{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+.read{
+    margin-top: 4vh;
+    padding:1vh;
+    background-color: transparent;
+    border: solid 0.2vh rgb(255, 255, 255);
+    color:rgb(255, 255, 255);
+}
+
+
+
+
+/*--------------------------SECTION-MENU(WHY/WHAT)---------------------------*/
+.second{
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+    background-color: white;
+    padding-bottom: 5em;
+    padding-top: 5em;
+}
+.menu{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+.row{
+    display: flex;
+    justify-content: flex-start;
+}
+.log{
+    display: flex;
+    align-items: center;
+}
+dd{
+    margin-left: 0;
+}
+.colorstyle{
+    color: rgb(0, 167, 125);
+    text-shadow: 2px 2px 2px rgba(7, 102, 86, 0.8);
+    font-size: x-large;
+    cursor: pointer;
+}
+
+
+
+/*--------------------------GALLERIE---------------------------*/
+.third{
+    background-color: rgb(221, 198, 198);
+    width:100%;
+}
+.gallerie{
+    width:100%;
+    height:auto;
+}
+.rang{
+    display: flex;
+}
+.third .gallerie .rang a{
+    height:auto;
+    width:25%;
+    margin:0;
+}
+.third .gallerie .rang img, .third .gallerie .rang iframe{
+    height:100%;
+    width:100%;
+    margin:0;
+}
+.footergal{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    padding:3vh;
+}
+.footergal nav{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.footergal nav a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+}
+.footergal div{
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+}
+.footergal div button{
+    background-color: transparent;
+    border: solid 0.2vh rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+}
+
+hr{
+    margin: 0;
+}
+
+
+
+
+/*--------------------------TEMOIGNAGES---------------------------*/
+.fourth{
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height:900px;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+.testi, .except{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:80%;
+    padding-top: 4em;
+}
+.become{
+    background-color: transparent;
+    border: solid 0.2vh rgb(6, 233, 184);
+    color:  rgb(6, 233, 184);
+    padding:1.5vh;
+    margin-top: 3em;
+}
+.fourth img{
+    width:10vh;
+    border-radius: 50%;
+}
+.right{
+    text-align: right;
+}
+.disptest_alt{
+    display:none;
+}
+
+
+
+
+/*--------------------------SECTIONWAVES---------------------------*/
+.fifth{
+    width:100%;
+    background-image: url('https://cdnb.artstation.com/p/assets/images/images/004/476/203/large/raqee-najmuldeen-img-0349.jpg?1483996461    ');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly ;
+    align-items: center;
+    height:400px;
+}
+.fifth button{
+    background-color: transparent;
+    border: solid 0.3vh rgb(13, 219, 175);
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+    padding:1.5vh;
+}
+.fifth p{
+    color: rgb(255, 255, 255);
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+.fifth h1{
+    color: white;
+    text-shadow: 4px 4px 4px rgb(0, 0, 0);
+}
+
+
+
+
+/*--------------------------FORMULAIRE---------------------------*/
+.sixth{
+    width:100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    height:600px;
+    padding-top: 5em;
+    padding-bottom: 5em;
+    align-items: center;
+    
+}
+.sixth form{
+    display: flex;
+    padding:0;
+    width: 80%;
+    justify-content: space-evenly;
+    padding-top: 5em;
+    padding-bottom: 2em;   
+
+}
+.formu{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 100%;
+    width: 40%;
+
+}
+input{
+    border: solid 1px rgb(21, 209, 146);
+    padding: 0.2em;
+}
+.send{
+    width:auto;
+    background-color: transparent;
+    border: solid 0.2vh rgb(6, 233, 184);
+    color: rgb(6, 233, 184);
+    padding: 1vh;
+}
+div textarea{
+    width:100%;
+    border: solid 1px rgb(21, 209, 146);
+    padding: 0.2em;
+}
+
+
+
+
+/*--------------------------CREDITS---------------------------*/
+.seventh{
+    display: flex;
+    justify-content: space-evenly;
+    width:100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height:28vh;
+    display: flex;
+}
+.credits{
+    padding-top: 1vh;
+}
+.seventh div button{
+    background-color: transparent;
+    border: solid 0.2vh rgb(6, 233, 184);
+    color: white;
+    padding:0.6vh;
+}
+
+.undermini{
+        width:25%;
+        border-top: solid 0.25vh rgb(6, 233, 184);
+}
+.twit{
+    margin-top: 3vh;
+    display: flex;
+    justify-content: flex-start;
+    border: solid 0.6px turquoise;
+    width: 60%;
+    height:12px;
+}
+.twit div{
+    width:8%;
+    background-color: rgb(47, 95, 226);
+    margin:0.15vh;
+}
+
+
+
+/*--------------------------FOOTER---------------------------*/
+footer{
+    width:100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: transparent;
+}
+footer span{
+    color: rgb(0, 0, 0);
+}
+footer nav{
+    width:30%;
+    display: flex;
+    justify-content: space-around;
+}
+footer nav a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+
+
+
+
+/*TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE*/
+/*TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE*/
+/*TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE*/
+/*TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE*/
+/*TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE TABLETTE*/
+
+
+
+@media all and (max-width:1024px){
+/*--------------------BODY-----------------*/
+    .themebutton{
+        left:20vh;
+        top:15vh;
+        transform: scale(0.7);
+    }
+
+/*------------------HEADER---------------------*/
+    header{
+        width:94%;
+    }
+    .logo{
+        width:10%;
+    }
+    .navi{
+        width:90%;
+    }
+    .navi a{
+        margin:0.8em;
+    }
+
+/*------------------WRAPPER--------------------*/
+    #wrapper{
+        width:94%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+/*------------------SECTION-MENU(WHY/WHAT)---------------*/
+    .second{
+        display: flex;
+        justify-content: space-evenly;
+        width:100%;
+        background-color: white;
+        padding-bottom: 5em;
+        padding-top: 5em;
+    }
+    .menu{
+        height: 100%;
+        width:30%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+    }
+    .row{
+        display: flex;
+        justify-content: flex-start;
+    }
+    .log{
+        display: flex;
+        align-items: center;
+    }
+    dd{
+        margin-left: 0;
+    }
+    .second .menu a{
+        text-decoration: none ;
+    }
+}
+
+
+
+/*MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE*/
+/*MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE*/
+/*MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE*/
+/*MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE*/
+/*MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE*/
+/*MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE MOBILE*/
+
+
+@media all and (max-width:768px){
+
+/*COLORPICKER COLORPICKER COLORPICKER COLORPICKER COLORPICKER*/
+  
+    .themebutton{
+        transform: scale(0.5) ;
+        left:2vh;
+        top:2vh;
+    }
+
+/*COLORPICKER COLORPICKER COLORPICKER COLORPICKER COLORPICKER*/
+
+/*--------------------------HEADER---------------------*/
+
+    header{
+        width:100%;
+    }
+    .logo{
+        margin: auto;
+        width:50%;
+    }
+    header img{
+        transform: scale(0.6);
+    }
+    .navi{
+        display: none;
+    }
+
+/*BURGER BURGER BURGER BURGER BURGER BURGER BURGER BURGER*/
+
+    /*INACTIVE*/
+
+    .burger{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbutton{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width:6vh;
+        height:5vh;
+        border-radius: 1vh;
+        background-color: rgba(3, 61, 34, 0.37);
+        border-color: transparent;
+        cursor: pointer;
+        transition: ease-out 0.2s;
+    }
+
+    .barreH, .barreM, .barreB{
+        height:12%;
+        width: 70%;
+        background-color: rgba(43, 43, 43, 0.884);
+        transition: ease-out 0.2s;
+    }
+
+    .naviburger{
+        display:none;
+    }
+
+    .naviburger hr{
+        margin:1vh;
+        width:50%;
+    }
+
+    .naviburger a{
+        text-decoration: none;
+        color: rgb(12, 117, 112);
+        transform: scale(0.6);
+    }
+
+    /*ACTIVE*/
+
+    .navbutton.active{
+        background-color: transparent;
+        transition: ease-in-out 0.2s;
+    }
+
+    .navbutton.active .barreH {
+        transform: rotateZ(-45deg) translateY(2vh);
+        transition: ease-in-out 0.2s;
+    }
+
+    .navbutton.active .barreM {
+        opacity: 0;
+        transition: ease-in-out 0.2s;
+    }
+
+    .navbutton.active .barreB {
+        transform: rotateZ(45deg) translateY(-2vh);
+        transition: ease-in-out 0.2s;
+    }
+
+    .naviburger.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width:25%;
+        height:30%;
+        position: absolute;
+        right:7vw;
+        top:8vh;
+        background-color: rgb(171, 214, 216);
+        padding:1em;
+    }
+
+    .naviburger.active hr{
+        margin:1vh;
+        width:50%;
+    }
+
+    .naviburger.active a{
+        text-decoration: none;
+        color: rgb(12, 117, 112);
+        font-size: large;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+
+/*------------------------WRAPPER----------------------*/
+
+    #wrapper{
+        width:100%;
+    }
+
+/*---------------------------MAIN----------------------*/
+
+    h1{
+        text-align: center;
+        font-size: 1.5em;
+    }
+
+/*---------------------------SECTION-TITRE-------------*/
+
+    .first{
+        height:400px;
+        background-size: auto ;
+    }
+
+/*-----------------SECTION-MENU(WHY/WHAT)--------------*/   
+    .second{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding:2.5em 0;
+    }
+    .second p{
+        margin-top: 0em;
+    }
+    .menu{
+        width:100%;
+        align-items: center;
+        margin-top: 8vh;
+    }
+    .row{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .second .menu h3{
+        text-align: center;
+    }
+    dd, dt{
+        text-align: center;
+    }
+    dt{
+        margin-top: -2em;
+    }
+    .second p, dd, dt{
+        transform: scale(0.8);
+    }
+    
+
+/*---------------------GALLERIE-------------------*/ 
+
+    .rang{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .third .gallerie .rang a{
+        height:auto;
+        width:100%;
+    }
+    .third .gallerie .rang img{
+        height:auto;
+        width:100%;
+    }
+    .third .gallerie .rang iframe{
+        width:100%;
+        height:50vh;
+    }
+    .footergal{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footergal nav{
+        width: 40%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 5vh;
+    }
+    .footergal div button{
+        margin:5vh;
+    }
+
+
+
+/*--------------------TEMOIGNAGES----------------------*/
+    .fourth{
+        height:1300px;
+    }
+    .testi{
+        display: flex;
+        justify-content: space-around;
+        width:80%;
+        margin-top: 3em;
+    }
+    .except{
+        display: flex;
+        justify-content: space-around;
+        width:80%;
+        margin-top: 3em;
+        
+    }
+    .fourth img{
+        height:8vh;
+        width:8vh;
+    }
+    .disptest{
+        display:none;
+    }
+    .disptest_alt, h4{
+        display: block;
+    }
+    .divalt{
+        display:flex;
+    }
+    .fourth q{
+        display:block;
+        text-align: justify;
+    }
+    .right, .left{
+        width:100%;
+    }
+    h4{
+        transform: scale(0.8);
+    }
+
+
+
+
+/*--------------------SECTIONWAVES--------------------*/
+
+    .fifth{
+        height:300px;
+    }
+    .under{
+        width:10%;
+    }
+    .fifth p{
+        text-align: center;
+    }
+
+/*---------------------FORMULAIRE--------------------------*/
+
+    .sixth{
+        height:400px;
+    }
+    .sixth form{
+        padding-top: 2em;  
+    }
+
+/*-----------------------------CREDITS------------------------*/
+
+    .seventh{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height:600px;
+    }
+    .credits{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .seventh h3{
+        margin-top: 2em;
+    }
+
+
+
+/*--------------------END--OF--WRAPPER----------------------*/
+
+/*-----------------------------FOOTER------------------------*/
+
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(10, 92, 146, 0.2);
+    }
+    footer span{
+        margin: 1em;
+        transform: scale(0.9);
+        text-align: center;
+    }
+    footer nav{
+        margin:1em;
+    }
+    footer nav a{
+        transform: scale(0.8);
+    }
+
+
+}
+
+
+
+
+
+
